@@ -10,6 +10,3 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('uva-website');
 }
-
-
-// this is a test message
