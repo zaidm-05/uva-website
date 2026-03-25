@@ -1,0 +1,43 @@
+.image-stack-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* green corner */
+.green-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #5a8a2a;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 0;
+}
+
+/* back img */
+.img-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+/* front img */
+.img-front {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 55%;
+  object-fit: cover;
+  border-radius: 4%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 2;
+}

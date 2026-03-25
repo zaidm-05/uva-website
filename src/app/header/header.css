@@ -1,0 +1,77 @@
+
+/* top section */
+.top-section {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.org-name {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  color: #2a648a;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+.btn-donate {
+  background-color: #f58b00;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.btn-donate:hover {
+  background-color: #5a8a2a;
+  color: #ffffff;
+}
+
+.green-navbar {
+  background-color: #5a8a2a;
+}
+
+.nav-link:hover {
+  color: #f5c400 !important;
+}
+
+.nav-item.active .nav-link {
+  color: #f5c400 !important;
+}
+
+/*  the dropdown items turn green when hovering above them */
+.dropdown-item:hover {
+  background-color: #5a8a2a;
+  color: #ffffff;
+}
+
+/* dropdown item highlighted when its route is active */
+.dropdown-item.active {
+  background-color: #5a8a2a !important;
+  color: #f5c400 !important;
+  font-weight: 600;
+}
+
+/* keep parent link highlighted while hovering over dropdown */
+.nav-item.dropdown:hover .nav-link {
+  color: #f5c400 !important;
+}
+
+/* show dropdown items when hovering over the dropdown toggle */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}

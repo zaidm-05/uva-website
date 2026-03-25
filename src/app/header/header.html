@@ -1,0 +1,97 @@
+
+<!-- logo + contact info + donate button + date -->
+<div class="top-section px-4 py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+
+
+     <!-- left side = image and uva name -->
+    <div class="d-flex align-items-center gap-3">
+
+        <a routerLink="/">
+            <img src="images/uva-logo.jpg" height="80" alt="UVA Logo">
+        </a>
+      
+      <div>
+        <h1 class="org-name mb-0">United Volunteers Association</h1>
+      </div>
+    </div>
+
+
+    <!-- right side = date, contact info, donate button -->
+    <div class="text-end">
+      <p class="date mb-2"> <em>{{ today | date:'EEEE d-MMMM-yyyy' }}</em></p>
+      <div class="d-flex align-items-center justify-content-end gap-3">
+        <div class="contact-info text-end">
+          <p class="mb-0">
+            support@uvassociation.org
+          </p>
+        </div>
+        <a routerLink="/donate" class="btn btn-donate px-4 py-2">Donate Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- green nav bar with dropdowns and router links -->
+<nav class="navbar navbar-expand-lg green-navbar">
+  <div class="container">
+
+    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-5">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+
+        <li class="nav-item dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/about-us">Who We Are</a></li>
+            <li><a class="dropdown-item" routerLink="/transparency">Transparency</a></li>
+            <li><a class="dropdown-item" routerLink="/legal-registration">Legal Registration</a></li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Programs</a>
+          <ul class="dropdown-menu">
+            <!-- TODO: add programs -->
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">Get Involved</a>
+          <ul class="dropdown-menu">
+
+            <!-- TODO: add get involved stuff -->
+            
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/impact">Our Impact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/donate">Donate</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/gallery">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
